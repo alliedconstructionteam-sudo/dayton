@@ -10,8 +10,9 @@
   *{margin:0;padding:0;box-sizing:border-box;} html{scroll-behavior:smooth;} body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--black);line-height:1.6;overflow-x:hidden;}
 
   /* NAV */
-  nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--black);display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:64px;border-bottom:3px solid var(--red);}
-  .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:3px;color:var(--red);text-decoration:none;}
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--black);display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:72px;border-bottom:3px solid var(--red);}
+  .nav-logo{display:flex;align-items:center;text-decoration:none;}
+  .nav-logo img{height:48px;width:48px;border-radius:50%;object-fit:cover;border:2px solid var(--red);}
   .nav-links{display:flex;gap:32px;list-style:none;}
   .nav-links a{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gray-mid);text-decoration:none;transition:color 0.2s;}
   .nav-links a:hover{color:var(--red);}
@@ -19,16 +20,17 @@
   .nav-cta:hover{background:var(--red-dark)!important;}
   .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
   .hamburger span{display:block;width:24px;height:2px;background:var(--white);}
-  .mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;background:var(--black);padding:24px 40px;z-index:99;border-bottom:2px solid var(--red);}
+  .mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;background:var(--black);padding:24px 40px;z-index:99;border-bottom:2px solid var(--red);}
   .mobile-menu.open{display:block;}
   .mobile-menu a{display:block;font-family:'DM Mono',monospace;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--gray-mid);text-decoration:none;padding:12px 0;border-bottom:1px solid #222;}
   .mobile-menu a:last-child{border-bottom:none;color:var(--red);}
   @media(max-width:768px){nav{padding:0 24px;}.nav-links{display:none;}.hamburger{display:flex;}}
 
   /* HERO */
-  .hero{background:var(--black);color:var(--white);min-height:100vh;display:flex;align-items:center;padding:100px 40px 80px;position:relative;overflow:hidden;}
+  .hero{background:var(--black);color:var(--white);min-height:100vh;display:flex;align-items:center;padding:120px 40px 80px;position:relative;overflow:hidden;}
   .hero::before{content:'A.C.T.';font-family:'Bebas Neue',sans-serif;font-size:clamp(120px,22vw,320px);position:absolute;right:-20px;top:50%;transform:translateY(-50%);color:rgba(212,43,43,0.06);letter-spacing:4px;user-select:none;line-height:1;}
   .hero-inner{max-width:900px;margin:0 auto;position:relative;z-index:1;}
+  .hero-logo{width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:24px;border:3px solid var(--red);}
   .hero-tag{display:inline-block;background:var(--red);color:var(--white);font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;border-radius:2px;margin-bottom:24px;}
   .hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(52px,9vw,100px);letter-spacing:2px;line-height:0.95;margin-bottom:20px;}
   .hero h1 span{color:var(--red);}
@@ -126,20 +128,9 @@
   .contact-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gray-dark);margin-bottom:2px;}
   .contact-value{font-size:15px;font-weight:600;color:var(--white);}
 
-  /* FORM */
-  .contact-form{display:flex;flex-direction:column;gap:16px;}
-  .form-group{display:flex;flex-direction:column;gap:6px;}
-  .form-group label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gray-dark);}
-  .form-group input,.form-group select,.form-group textarea{background:#1a1a1a;border:1px solid #333;color:var(--white);padding:12px 16px;border-radius:4px;font-family:'DM Sans',sans-serif;font-size:14px;transition:border-color 0.2s;outline:none;}
-  .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--red);}
-  .form-group textarea{resize:vertical;min-height:100px;}
-  .form-group select option{background:#1a1a1a;}
-  .form-submit{background:var(--red);color:var(--white);border:none;padding:16px 32px;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;border-radius:3px;cursor:pointer;transition:background 0.2s;width:100%;}
-  .form-submit:hover{background:var(--red-dark);}
-  .form-success{display:none;background:#1a3a1a;border:1px solid #2D9B4E;border-radius:8px;padding:20px;color:#4DC96A;font-family:'DM Mono',monospace;font-size:13px;text-align:center;letter-spacing:1px;}
-
   /* FOOTER */
-  footer{background:#0a0a0a;color:var(--gray-dark);text-align:center;padding:32px 24px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1px;border-top:3px solid var(--red);}
+  footer{background:#0a0a0a;color:var(--gray-dark);text-align:center;padding:48px 24px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1px;border-top:3px solid var(--red);}
+  .footer-logo{width:56px;height:56px;border-radius:50%;object-fit:cover;margin-bottom:16px;border:2px solid var(--red);}
   footer strong{color:var(--red);}
   .footer-tagline{color:#333;font-size:10px;margin-top:8px;}
   .red-divider{height:4px;background:var(--red);}
@@ -149,7 +140,9 @@
 <body>
 
 <nav>
-  <a href="#home" class="nav-logo">A.C.T.</a>
+  <a href="#home" class="nav-logo">
+    <img src="image.png" alt="A.C.T. Logo">
+  </a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#pricing">Pricing</a></li>
@@ -172,6 +165,8 @@
 
 <section class="hero" id="home">
   <div class="hero-inner">
+    <img src="image.png" alt="Allied Construction Team Logo" class="hero-logo">
+    <br>
     <div class="hero-tag">Student-Run · Dayton, Ohio</div>
     <h1>Allied<br><span>Construction</span><br>Team</h1>
     <p class="hero-sub">We're A.C.T. — a student-run construction and home services company based in Dayton. Real work. Fair prices. Building something that lasts.</p>
@@ -370,6 +365,7 @@
 </section>
 
 <footer>
+  <img src="image.png" alt="A.C.T. Logo" class="footer-logo"><br>
   <strong>A.C.T.</strong> — Allied Construction Team · Dayton, Ohio · (937) 993-2844 · ACTDayton.com
   <div class="footer-tagline">Building Skills. Building Community. Building Futures.</div>
 </footer>
@@ -382,4 +378,3 @@
 </script>
 </body>
 </html>
- 
