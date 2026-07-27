@@ -60,7 +60,7 @@
   body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--black);line-height:1.6;overflow-x:hidden;}
 
   /* Prevent fixed navbar from covering section headers on anchor jump */
-  section, .trial-banner { scroll-margin-top: 70px; }
+  section, .trial-banner, #estimate-box { scroll-margin-top: 80px; }
 
   /* NAV */
   nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--black);display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:64px;border-bottom:3px solid var(--red);}
@@ -191,18 +191,7 @@
   .contact-value{font-size:15px;font-weight:600;color:var(--white);}
   .contact-value a{color:var(--white);text-decoration:none;}
   .contact-value a:hover{color:var(--red);}
-
-  /* ESTIMATE CARD */
-  .estimate-card{background:#1a1a1a;border-radius:12px;padding:40px;width:100%;border:1px solid #222;}
-  .estimate-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:12px;}
-  .estimate-title{font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:1px;color:var(--white);line-height:1;margin-bottom:16px;font-weight:400;}
-  .estimate-desc{font-size:14px;color:var(--gray-mid);line-height:1.7;margin-bottom:32px;}
-  .estimate-btn{display:block;background:var(--red);color:var(--white);padding:18px 32px;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border-radius:3px;text-align:center;transition:background 0.2s;font-weight:600;}
-  .estimate-btn:hover{background:var(--red-dark);}
-  .estimate-alt{font-size:12px;color:var(--gray-mid);margin-top:16px;font-family:'DM Mono',monospace;text-align:center;}
-  .estimate-alt a{color:var(--gray-mid);text-decoration:none;}
-  .estimate-alt a:hover{color:var(--red);}
-  .estimate-wrap{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;height:100%;}
+  .estimate-wrap{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;height:100%;width:100%;}
 
   /* FOOTER */
   footer{background:#0a0a0a;color:var(--gray-mid);text-align:center;padding:32px 24px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:1px;border-top:3px solid var(--red);}
@@ -227,7 +216,7 @@
     <li><a href="#pricing">Pricing</a></li>
     <li><a href="#lawn">Lawn Plans</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="https://form.jotform.com/253368601035049" target="_blank" rel="noopener" class="nav-cta">Free Estimate</a></li>
+    <li><a href="#estimate-box" class="nav-cta">Free Estimate</a></li>
   </ul>
   <button class="hamburger" onclick="toggleMenu()" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -240,7 +229,7 @@
   <a href="#pricing" onclick="toggleMenu()">Pricing</a>
   <a href="#lawn" onclick="toggleMenu()">Lawn Plans</a>
   <a href="#about" onclick="toggleMenu()">About</a>
-  <a href="https://form.jotform.com/253368601035049" target="_blank" rel="noopener" onclick="toggleMenu()">Free Estimate →</a>
+  <a href="#estimate-box" onclick="toggleMenu()">Free Estimate →</a>
 </div>
 
 <section class="hero" id="home">
@@ -249,7 +238,7 @@
     <h1>Allied<br><span>Construction</span><br>Team</h1>
     <p class="hero-sub">We're A.C.T. — a student-run construction and home services company based in Dayton. Real work. Fair prices. Building something that lasts.</p>
     <div class="hero-buttons">
-      <a href="https://form.jotform.com/253368601035049" target="_blank" rel="noopener" class="btn-primary">Get a Free Estimate</a>
+      <a href="#estimate-box" class="btn-primary">Get a Free Estimate</a>
       <a href="#services" class="btn-outline">See Our Services</a>
     </div>
     <div class="hero-pills">
@@ -313,7 +302,6 @@
     <p class="section-label">Visual Proof &amp; Past Jobs</p>
     <h2 class="section-title">See The Crew In Action</h2>
     <p style="color:var(--gray-dark);margin-bottom:8px;font-size:15px;max-width:560px;">Don't just take our word for it. Explore our latest jobs, before-and-afters, and project progress around Dayton on Instagram.</p>
-    <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
     <script src="https://elfsightcdn.com/platform.js" async></script>
     <div class="elfsight-app-22084712-123d-44ed-b7f1-79f92373e0f0" data-elfsight-app-lazy></div>
     <a href="https://www.instagram.com/actdayton" target="_blank" rel="noopener" class="instagram-follow">Follow @actdayton →</a>
@@ -444,91 +432,84 @@
           <div class="contact-item"><div class="contact-icon" aria-hidden="true">📸</div><div><div class="contact-label">Instagram</div><div class="contact-value"><a href="https://www.instagram.com/actdayton" target="_blank" rel="noopener">@actdayton ↗</a></div></div></div>
         </div>
       </div>
-      <div class="estimate-wrap">
-        <div class="estimate-card">
-          <p class="estimate-label">Free Estimate</p>
-          <p class="estimate-title">Fill Out Our<br>Request Form</p>
-          <p class="estimate-desc">Takes less than 2 minutes. Tell us what you need and we'll reach out within 24 hours. No pressure — just a conversation.</p>
-          <a href="https://form.jotform.com/253368601035049" target="_blank" rel="noopener" class="estimate-btn">Request Free Estimate →<div class="contact-form-box" style="background: #111; padding: 32px; border-radius: 8px; border: 1px solid #222;">
-  <h3 style="color: #fff; margin-top: 0; margin-bottom: 8px; font-size: 22px;">Request Your Free Estimate</h3>
-  <p style="color: #aaa; font-size: 14px; margin-bottom: 24px;">Fill out the details below. We reply within 24 hours with a straightforward quote!</p>
+      
+      <!-- CLEAN INLINE FORM (NO JOTFORM LINKS) -->
+      <div class="estimate-wrap" id="estimate-box">
+        <div style="background: #111; padding: 32px; border-radius: 8px; border: 1px solid #222; width: 100%;">
+          <h3 style="color: #fff; margin-top: 0; margin-bottom: 8px; font-size: 22px;">Request Your Free Estimate</h3>
+          <p style="color: #aaa; font-size: 14px; margin-bottom: 24px;">Fill out the details below. We reply within 24 hours with a straightforward quote!</p>
 
-  <!-- FormSubmit routes this straight to your Gmail for FREE without a backend -->
-  <form action="https://formsubmit.co/alliedconstructionteam@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 16px;">
-    
-    <!-- Email Subject Line in your Gmail Inbox -->
-    <input type="hidden" name="_subject" value="🚨 NEW A.C.T. ESTIMATE REQUEST!">
-    <!-- Makes the email arrive in a clean table format -->
-    <input type="hidden" name="_template" value="table">
-    <!-- Removes the annoying captcha puzzle for your clients -->
-    <input type="hidden" name="_captcha" value="false">
-    <!-- Redirects them to a clean thank you message on your site after sending -->
-    <input type="hidden" name="_next" value="https://www.actdayton.com">
+          <form action="https://formsubmit.co/alliedconstructionteam@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 16px;">
+            <input type="hidden" name="_subject" value="🚨 NEW A.C.T. ESTIMATE REQUEST!">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://www.actdayton.com">
 
-    <div>
-      <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">YOUR NAME *</label>
-      <input type="text" name="Client_Name" required placeholder="e.g. Patty Good" style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; box-sizing: border-box;">
-    </div>
+            <div>
+              <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">YOUR NAME *</label>
+              <input type="text" name="Name" required placeholder="Enter your full name" style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; box-sizing: border-box;">
+            </div>
 
-    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-      <div style="flex: 1; min-width: 140px;">
-        <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">PHONE NUMBER *</label>
-        <input type="tel" name="Phone_Number" required placeholder="(937) 000-0000" style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; box-sizing: border-box;">
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <div style="flex: 1; min-width: 140px;">
+                <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">PHONE NUMBER *</label>
+                <input type="tel" name="Phone" required placeholder="(937) 000-0000" style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; box-sizing: border-box;">
+              </div>
+              <div style="flex: 1; min-width: 140px;">
+                <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">DAYTON NEIGHBORHOOD *</label>
+                <input type="text" name="Neighborhood" required placeholder="e.g. Belmont or street name" style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; box-sizing: border-box;">
+              </div>
+            </div>
+
+            <div>
+              <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">SERVICE NEEDED *</label>
+              <select name="Service" required style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; box-sizing: border-box;">
+                <option value="" disabled selected>Select a service...</option>
+                <option value="Neighborhood Lawn Care (Mowing/Edging)">Neighborhood Lawn Care (Mowing/Edging)</option>
+                <option value="Yard Clean-Out & Bagging">Yard Clean-Out & Bagging</option>
+                <option value="Interior Room Painting">Interior Room Painting</option>
+                <option value="Free Labor Trial / Other">Free Labor Trial / Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">JOB DETAILS &amp; TIMELINE</label>
+              <textarea name="Details" rows="3" placeholder="Tell us about the yard size, grass height, or room dimensions..." style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; font-family: inherit; resize: vertical; box-sizing: border-box;"></textarea>
+            </div>
+
+            <button type="submit" style="background: #e62429; color: #fff; border: none; padding: 14px 24px; font-size: 16px; font-weight: bold; border-radius: 4px; cursor: pointer; margin-top: 8px; transition: background 0.2s; text-transform: uppercase;">
+              Send Estimate Request 🚀
+            </button>
+          </form>
+        </div>
       </div>
-      <div style="flex: 1; min-width: 140px;">
-        <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">DAYTON NEIGHBORHOOD *</label>
-        <input type="text" name="Neighborhood" required placeholder="e.g. Belmont / Belmont Ave" style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; box-sizing: border-box;">
-      </div>
+
     </div>
-
-    <div>
-      <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">SERVICE NEEDED *</label>
-      <select name="Service_Requested" required style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; box-sizing: border-box;">
-        <option value="" disabled selected>Select a service...</option>
-        <option value="Neighborhood Lawn Care (Mowing/Edging)">Neighborhood Lawn Care (Mowing/Edging)</option>
-        <option value="Yard Clean-Out & Bagging">Yard Clean-Out & Bagging</option>
-        <option value="Interior Room Painting">Interior Room Painting</option>
-        <option value="Free Labor Trial / Other">Free Labor Trial / Other</option>
-      </select>
-    </div>
-
-    <div>
-      <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">JOB DETAILS & TIMELINE</label>
-      <textarea name="Job_Details" rows="3" placeholder="Tell us about the yard size, grass height, or room dimensions..." style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; font-family: inherit; resize: vertical; box-sizing: border-box;"></textarea>
-    </div>
-
-    <button type="submit" style="background: #e62429; color: #fff; border: none; padding: 14px 24px; font-size: 16px; font-weight: bold; border-radius: 4px; cursor: pointer; margin-top: 8px; transition: background 0.2s; text-transform: uppercase;">
-      Send Estimate Request 🚀
-    </button>
-
-  </form>
-</div>
+  </div>
+</section>
 
 <footer>
-  <strong>A.C.T.</strong> — Allied Construction Team · Dayton, Ohio · <a href="tel:+19379932844">(937) 993-2844</a> · ACTDayton.com
-  <div class="footer-tagline">Building Skills. Building Community. Building Futures.</div>
+  <p>&copy; 2026 <strong>Allied Construction Team (A.C.T.)</strong> · Dayton, Ohio</p>
+  <div class="footer-tagline">Student-Run Home Services &amp; Landscaping</div>
 </footer>
 
 <script>
-  function toggleMenu(){
+  function toggleMenu() {
     const menu = document.getElementById('mobileMenu');
-    const hamburger = document.querySelector('.hamburger');
-    const isOpen = menu.classList.toggle('open');
-    if (hamburger) {
-      hamburger.setAttribute('aria-expanded', isOpen);
-    }
+    menu.classList.toggle('open');
   }
 
-  function togglePricing(btn){
+  function togglePricing(btn) {
     const rows = btn.nextElementSibling;
-    const isOpen = rows.classList.toggle('open');
-    btn.setAttribute('aria-expanded', isOpen);
-    
-    const toggleText = btn.querySelector('.toggle');
-    if(toggleText){
-      toggleText.textContent = isOpen ? 'Tap to collapse ▴' : 'Tap to expand ▾';
+    rows.classList.toggle('open');
+    const toggleSpan = btn.querySelector('.toggle');
+    if (rows.classList.contains('open')) {
+      toggleSpan.textContent = 'Tap to collapse ▴';
+    } else {
+      toggleSpan.textContent = 'Tap to expand ▾';
     }
   }
 </script>
+
 </body>
 </html>
