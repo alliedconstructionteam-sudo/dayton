@@ -449,13 +449,60 @@
           <p class="estimate-label">Free Estimate</p>
           <p class="estimate-title">Fill Out Our<br>Request Form</p>
           <p class="estimate-desc">Takes less than 2 minutes. Tell us what you need and we'll reach out within 24 hours. No pressure — just a conversation.</p>
-          <a href="https://form.jotform.com/253368601035049" target="_blank" rel="noopener" class="estimate-btn">Request Free Estimate →</a>
-          <p class="estimate-alt">Or call/text us directly: <a href="tel:+19379932844">(937) 993-2844</a></p>
-        </div>
+          <a href="https://form.jotform.com/253368601035049" target="_blank" rel="noopener" class="estimate-btn">Request Free Estimate →<div class="contact-form-box" style="background: #111; padding: 32px; border-radius: 8px; border: 1px solid #222;">
+  <h3 style="color: #fff; margin-top: 0; margin-bottom: 8px; font-size: 22px;">Request Your Free Estimate</h3>
+  <p style="color: #aaa; font-size: 14px; margin-bottom: 24px;">Fill out the details below. We reply within 24 hours with a straightforward quote!</p>
+
+  <!-- FormSubmit routes this straight to your Gmail for FREE without a backend -->
+  <form action="https://formsubmit.co/alliedconstructionteam@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 16px;">
+    
+    <!-- Email Subject Line in your Gmail Inbox -->
+    <input type="hidden" name="_subject" value="🚨 NEW A.C.T. ESTIMATE REQUEST!">
+    <!-- Makes the email arrive in a clean table format -->
+    <input type="hidden" name="_template" value="table">
+    <!-- Removes the annoying captcha puzzle for your clients -->
+    <input type="hidden" name="_captcha" value="false">
+    <!-- Redirects them to a clean thank you message on your site after sending -->
+    <input type="hidden" name="_next" value="https://www.actdayton.com">
+
+    <div>
+      <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">YOUR NAME *</label>
+      <input type="text" name="Client_Name" required placeholder="e.g. Patty Good" style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; box-sizing: border-box;">
+    </div>
+
+    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 140px;">
+        <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">PHONE NUMBER *</label>
+        <input type="tel" name="Phone_Number" required placeholder="(937) 000-0000" style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; box-sizing: border-box;">
+      </div>
+      <div style="flex: 1; min-width: 140px;">
+        <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">DAYTON NEIGHBORHOOD *</label>
+        <input type="text" name="Neighborhood" required placeholder="e.g. Belmont / Belmont Ave" style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; box-sizing: border-box;">
       </div>
     </div>
-  </div>
-</section>
+
+    <div>
+      <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">SERVICE NEEDED *</label>
+      <select name="Service_Requested" required style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; box-sizing: border-box;">
+        <option value="" disabled selected>Select a service...</option>
+        <option value="Neighborhood Lawn Care (Mowing/Edging)">Neighborhood Lawn Care (Mowing/Edging)</option>
+        <option value="Yard Clean-Out & Bagging">Yard Clean-Out & Bagging</option>
+        <option value="Interior Room Painting">Interior Room Painting</option>
+        <option value="Free Labor Trial / Other">Free Labor Trial / Other</option>
+      </select>
+    </div>
+
+    <div>
+      <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">JOB DETAILS & TIMELINE</label>
+      <textarea name="Job_Details" rows="3" placeholder="Tell us about the yard size, grass height, or room dimensions..." style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; font-family: inherit; resize: vertical; box-sizing: border-box;"></textarea>
+    </div>
+
+    <button type="submit" style="background: #e62429; color: #fff; border: none; padding: 14px 24px; font-size: 16px; font-weight: bold; border-radius: 4px; cursor: pointer; margin-top: 8px; transition: background 0.2s; text-transform: uppercase;">
+      Send Estimate Request 🚀
+    </button>
+
+  </form>
+</div>
 
 <footer>
   <strong>A.C.T.</strong> — Allied Construction Team · Dayton, Ohio · <a href="tel:+19379932844">(937) 993-2844</a> · ACTDayton.com
