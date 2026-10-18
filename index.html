@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A.C.T. Lawn &amp; Grounds | Dayton, Ohio Lawn Care</title>
+<title>A.C.T. Lawn &amp; Grounds | Residential Lawn Care in Dayton, Ohio</title>
 
 <!-- SEO -->
-<meta name="description" content="A.C.T. Lawn &amp; Grounds provides residential lawn mowing, trimming, recurring maintenance, and seasonal yard cleanup in Dayton, Ohio. New customers may qualify for one standard lawn service labor-free, subject to scope, service area, and availability confirmation.">
-<meta name="keywords" content="lawn care Dayton Ohio, lawn mowing Dayton, grass trimming Dayton, recurring lawn maintenance Dayton, seasonal yard cleanup Dayton">
-<meta name="theme-color" content="#D42B2B">
+<meta name="description" content="A.C.T. Lawn &amp; Grounds is a residential lawn and grounds company serving Dayton, Ohio, with mowing, trimming, recurring maintenance, and seasonal leaf cleanup. Request an estimate for your property.">
+<meta name="keywords" content="lawn care Dayton Ohio, lawn mowing Dayton, grass trimming Dayton, recurring lawn maintenance Dayton, leaf cleanup Dayton">
+<meta name="theme-color" content="#111214">
 <link rel="canonical" href="https://actdayton.com/">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Allied Construction Team — A.C.T.">
 <meta property="og:title" content="A.C.T. Lawn &amp; Grounds | Residential Lawn Care in Dayton, Ohio">
-<meta property="og:description" content="Residential lawn mowing, trimming, recurring maintenance, and seasonal cleanup in Dayton, Ohio. Ask about a labor-free standard service for new customers.">
+<meta property="og:description" content="Residential lawn care and seasonal leaf cleanup in Dayton, Ohio. Request an estimate for your property.">
 <meta property="og:url" content="https://actdayton.com/">
 <meta property="og:image" content="https://actdayton.com/act-logo.png.jpeg">
 <meta property="og:image:alt" content="Allied Construction Team — A.C.T. — Dayton, Ohio Logo">
@@ -36,7 +36,7 @@
   "name": "Allied Construction Team (A.C.T.)",
   "alternateName": "A.C.T.",
   "image": "https://actdayton.com/act-logo.png.jpeg",
-  "description": "Residential lawn and grounds service in Dayton, Ohio, including mowing, trimming, recurring lawn maintenance, and basic seasonal cleanup.",
+  "description": "Residential lawn and grounds service in Dayton, Ohio, including mowing, trimming, recurring lawn maintenance, and seasonal leaf cleanup.",
   "url": "https://actdayton.com/",
   "telephone": "+1-937-993-2844",
   "email": "actdayton.quotes@gmail.com",
@@ -55,8 +55,9 @@
 
 <style>
   :root { --red:#D42B2B; --red-dark:#A81E1E; --black:#111111; --white:#FAFAFA; --gray:#F0F0F0; --gray-mid:#CCCCCC; --gray-dark:#555555; }
-  *{margin:0;padding:0;box-sizing:border-box;} 
-  html{scroll-behavior:smooth;background:var(--white);} 
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;background:var(--white);}
+  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto;}*,*::before,*::after{scroll-behavior:auto!important;transition-duration:0.01ms!important;animation-duration:0.01ms!important;}}
   body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--black);line-height:1.6;overflow-x:hidden;}
 
   /* Prevent fixed navbar from covering section headers on anchor jump */
@@ -206,11 +207,141 @@
     max-width: 100%;
     height: auto;
   }
+
+  /* Refined layout, clear focus states, and small-screen behavior */
+  :root{--red:#cf2e32;--red-dark:#aa2026;--black:#111214;--white:#fff;--gray:#f4f3f1;--gray-mid:#c8c8c8;--gray-dark:#5f6063;--ink:#17181a;--line:#e4e2df;}
+  body{color:var(--ink);line-height:1.65;}
+  a{-webkit-tap-highlight-color:transparent;}
+  a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f1a93b;outline-offset:3px;}
+  .skip-link{position:fixed;z-index:300;top:8px;left:8px;transform:translateY(-160%);background:#fff;color:#111;padding:10px 14px;border-radius:5px;font-weight:700;}
+  .skip-link:focus{transform:translateY(0);}
+  section{scroll-margin-top:88px;}
+  nav{height:72px;padding:0 max(28px,calc((100% - 1240px)/2));border-bottom:1px solid rgba(255,255,255,.12);}
+  .nav-logo-img{width:44px;height:44px;}
+  .nav-links{gap:clamp(18px,2.1vw,32px);}
+  .nav-links a{font-size:10px;letter-spacing:1.4px;}
+  .nav-cta{padding:11px 17px;border-radius:5px;}
+  .mobile-menu{top:72px;padding:18px 24px 24px;}
+  .hero{min-height:min(800px,100svh);padding:132px 32px 96px;background:radial-gradient(ellipse at 78% 35%,rgba(207,46,50,.13),transparent 34%),var(--black);}
+  .hero-inner{width:min(1180px,100%);max-width:1180px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(320px,.75fr);column-gap:clamp(40px,8vw,120px);align-items:center;}
+  .hero-inner>.hero-tag,.hero-inner>h1,.hero-inner>.hero-sub,.hero-inner>.hero-buttons,.hero-inner>.hero-pills{grid-column:1;}
+  .hero-tag{background:transparent;border:1px solid rgba(255,255,255,.2);color:#eee;border-radius:100px;padding:8px 14px;letter-spacing:1.5px;margin-bottom:24px;}
+  .hero h1{font-size:clamp(58px,7.4vw,96px);letter-spacing:0;line-height:.98;margin:0 0 22px;}
+  .hero h1 span{color:var(--red);}
+  .hero-sub{font-size:clamp(16px,1.5vw,19px);max-width:570px;line-height:1.75;color:#d0d0d0;margin-bottom:30px;}
+  .hero-buttons{gap:12px;}
+  .btn-primary,.btn-outline{min-height:52px;display:inline-flex;align-items:center;justify-content:center;border-radius:6px;padding:14px 22px;font-size:11px;letter-spacing:1.4px;}
+  .btn-outline{border:1px solid rgba(255,255,255,.28);}
+  .hero-pills{margin-top:28px;gap:8px;}
+  .pill{font-size:10px;letter-spacing:.3px;padding:6px 11px;color:#d7d7d7;border-color:rgba(255,255,255,.16);}
+  .hero::before{font-size:clamp(160px,27vw,360px);right:2%;top:30%;color:rgba(255,255,255,.022);}
+  .hero-feature{grid-column:2;grid-row:1 / span 5;position:relative;z-index:2;padding:clamp(26px,3vw,40px);border:1px solid rgba(255,255,255,.14);border-radius:14px;background:linear-gradient(155deg,rgba(255,255,255,.075),rgba(255,255,255,.025));box-shadow:0 28px 90px rgba(0,0,0,.25);overflow:hidden;}
+  .hero-feature::after{content:"";position:absolute;width:200px;height:200px;border:1px solid rgba(207,46,50,.24);border-radius:50%;right:-110px;top:-115px;box-shadow:0 0 0 24px rgba(207,46,50,.035),0 0 0 48px rgba(207,46,50,.025);pointer-events:none;}
+  .feature-topline{display:flex;align-items:center;gap:12px;font:10px 'DM Mono',monospace;letter-spacing:1.7px;color:#d8d8d8;}
+  .feature-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--red);font-size:21px;}
+  .feature-kicker{margin-top:32px;color:#f07578;font:11px 'DM Mono',monospace;letter-spacing:2px;}
+  .hero-feature h2{margin:7px 0 13px;font:400 clamp(30px,3vw,42px)/1.05 'Bebas Neue',sans-serif;letter-spacing:.5px;color:#fff;}
+  .feature-copy{font-size:14px;line-height:1.75;color:#ceced0;max-width:440px;}
+  .feature-rule{display:flex;align-items:center;gap:14px;border-top:1px solid rgba(255,255,255,.12);padding:14px 0;color:#e6e6e6;font-size:13px;}
+  .feature-rule:first-of-type{margin-top:24px;}
+  .feature-rule span:first-child{font:11px 'DM Mono',monospace;color:#f07578;}
+  .feature-link{margin-top:12px;display:flex;justify-content:space-between;align-items:center;color:#fff;font-size:13px;font-weight:700;text-decoration:none;}
+  .feature-link span{color:#f07578;font-size:20px;}
+  .quick-points{display:flex;justify-content:center;gap:clamp(24px,6vw,84px);flex-wrap:wrap;padding:19px 24px;background:#fff;border-bottom:1px solid var(--line);color:#555;font:11px 'DM Mono',monospace;letter-spacing:.2px;}
+  .quick-points strong{color:var(--red);margin-right:7px;}
+  .section{max-width:1180px;padding:96px 32px;}
+  .section-label{font-size:10px;letter-spacing:2px;margin-bottom:11px;}
+  .section-title{font-size:clamp(38px,5vw,58px);margin-bottom:18px;}
+  .section-intro{max-width:610px;margin:0 0 38px;color:var(--gray-dark);font-size:16px;}
+  .services-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
+  .service-card{min-height:240px;background:#fff;border:1px solid var(--line);border-top:3px solid var(--red);border-radius:10px;padding:28px;box-shadow:0 8px 24px rgba(20,20,20,.035);}
+  .service-card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(20,20,20,.08);transition:transform .2s,box-shadow .2s;}
+  .service-icon{display:grid;place-items:center;width:44px;height:44px;margin-bottom:19px;border-radius:10px;background:#fcebec;color:var(--red);font-size:25px;font-weight:700;}
+  .service-card h3{font-size:18px;margin-bottom:10px;}
+  .service-card p{font-size:14px;line-height:1.75;}
+  .process-section{background:#f5f4f2;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px;}
+  .process-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px;}
+  .process-card>span{display:block;color:var(--red);font:12px 'DM Mono',monospace;letter-spacing:1px;margin-bottom:26px;}
+  .process-card h3{font-size:17px;margin-bottom:7px;}
+  .process-card p{font-size:14px;color:var(--gray-dark);line-height:1.7;}
+  .instagram-section{background:#f5f4f2;border:0;}
+  .instagram-inner{max-width:1180px;padding:88px 32px;margin:0 auto;}
+  .gallery-intro{color:var(--gray-dark);margin-bottom:20px;font-size:15px;}
+  .instagram-follow{border-radius:6px;padding:13px 20px;font-size:11px;letter-spacing:1.4px;}
+  .pricing-wrap{border-radius:12px;box-shadow:0 18px 48px rgba(0,0,0,.12);}
+  .pricing-category{border-bottom:1px solid rgba(255,255,255,.12);}
+  .pricing-cat-header{padding:22px 28px;cursor:default;}
+  .pricing-rows{display:block;padding:0 28px 18px;}
+  .pricing-row{gap:18px;padding:13px 0;border-color:rgba(255,255,255,.1);}
+  .pricing-row .price{color:#ff7376;text-align:right;}
+  .yard-sizes{gap:16px;margin-top:30px;}
+  .yard-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px 20px;box-shadow:0 8px 24px rgba(20,20,20,.035);}
+  .yard-price{font-size:30px;margin:8px 0;}
+  .yard-desc{font-size:13px;}
+  .about-wrap{grid-template-columns:1.35fr .65fr;gap:70px;align-items:center;}
+  .about-right{background:#f5f4f2;border:1px solid var(--line);border-radius:14px;padding:26px;}
+  .about-right>img{width:150px;height:150px;object-fit:contain;}
+  .about-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .stat-item{padding:17px;border-radius:8px;}
+  .stat-num{font-size:28px;}
+  .stat-label{font-size:9px;letter-spacing:1px;}
+  .contact-section{background:radial-gradient(ellipse at 12% 0%,rgba(207,46,50,.12),transparent 32%),var(--black);}
+  .contact-inner{max-width:1180px;padding:88px 32px;gap:clamp(36px,7vw,88px);}
+  .contact-value{overflow-wrap:anywhere;}
+  .estimate-wrap>div{border-radius:12px!important;padding:clamp(22px,3vw,34px)!important;background:#191a1c!important;border:1px solid #2e3033!important;box-shadow:0 22px 60px rgba(0,0,0,.25);}
+  .estimate-wrap input,.estimate-wrap select,.estimate-wrap textarea{min-height:48px;margin-bottom:15px;}
+  .estimate-wrap textarea{min-height:96px;}
+  .estimate-wrap label{display:block;letter-spacing:.6px;}
+  .estimate-wrap button{min-height:50px;border-radius:6px!important;font-size:12px!important;letter-spacing:1.2px;text-transform:uppercase;}
+  footer{padding:30px 24px;border-top:1px solid rgba(255,255,255,.12);}
+  @media(max-width:920px){
+    .hero{min-height:auto;}
+    .hero-inner{grid-template-columns:minmax(0,1fr) minmax(270px,.8fr);column-gap:34px;}
+    .hero h1{font-size:clamp(54px,8vw,76px);}
+    .services-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .service-card:last-child{grid-column:1 / -1;}
+    .about-wrap{gap:36px;}
+  }
+  @media(max-width:760px){
+    nav{height:66px;padding:0 22px;}
+    .mobile-menu{top:66px;}
+    .hero{padding:108px 22px 55px;}
+    .hero-inner{grid-template-columns:1fr;gap:0;}
+    .hero-inner>.hero-tag,.hero-inner>h1,.hero-inner>.hero-sub,.hero-inner>.hero-buttons,.hero-inner>.hero-pills{grid-column:1;}
+    .hero h1{font-size:clamp(54px,13vw,78px);}
+    .hero-feature{grid-column:1;grid-row:auto;margin-top:38px;padding:25px;}
+    .hero-feature h2{font-size:36px;}
+    .quick-points{justify-content:flex-start;gap:10px 24px;padding:16px 22px;font-size:10px;}
+    .section{padding:68px 22px;}
+    .process-grid{grid-template-columns:1fr;gap:10px;}
+    .process-card{padding:19px 21px;}
+    .process-card>span{margin-bottom:9px;}
+    .instagram-inner{padding:68px 22px;}
+    .contact-inner{padding:68px 22px;}
+  }
+  @media(max-width:520px){
+    .hero-buttons{display:grid;grid-template-columns:1fr;}
+    .hero-buttons a{width:100%;}
+    .hero-pills{margin-top:22px;}
+    .services-grid{grid-template-columns:1fr;}
+    .service-card:last-child{grid-column:auto;}
+    .service-card{min-height:unset;}
+    .yard-sizes{grid-template-columns:1fr;}
+    .about-wrap{grid-template-columns:1fr;}
+    .about-right{max-width:360px;margin:0 auto;width:100%;}
+    .pricing-cat-header{padding:20px 18px;}
+    .pricing-cat-header h3{font-size:22px;}
+    .pricing-rows{padding:0 18px 16px;}
+    .pricing-row .name{font-size:13px;}
+    .pricing-row .price{font-size:12px;}
+  }
 </style>
 </head>
 <body>
 
-<nav>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav aria-label="Main navigation">
   <a href="#home" class="nav-brand">
     <img src="act-logo.png.jpeg" alt="A.C.T. Logo" class="nav-logo-img">
     <span class="nav-logo-text">A.C.T.</span>
@@ -223,7 +354,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#estimate-box" class="nav-cta">Free Estimate</a></li>
   </ul>
-  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -237,76 +368,86 @@
   <a href="#estimate-box" onclick="toggleMenu()">Free Estimate →</a>
 </div>
 
+<main id="main">
 <section class="hero" id="home">
   <div class="hero-inner">
     <div class="hero-tag">A.C.T. Lawn &amp; Grounds · Dayton, Ohio</div>
-    <h1>A.C.T.<br><span>Lawn &amp;</span><br>Grounds</h1>
-    <p class="hero-sub">A.C.T. provides residential lawn mowing, trimming, recurring maintenance, and seasonal yard cleanup in Dayton. Fair, straightforward pricing and dependable care for your outdoor spaces.</p>
+    <h1>Care for the spaces<br>around <span>home.</span></h1>
+    <p class="hero-sub">Residential lawn and grounds care in Dayton, Ohio. From routine mowing to seasonal leaf cleanup, A.C.T. makes it easy to understand the work, the price, and the next step.</p>
     <div class="hero-buttons">
       <a href="#estimate-box" class="btn-primary">Get a Free Estimate</a>
       <a href="#services" class="btn-outline">See Our Services</a>
     </div>
-    <div class="hero-pills">
-      <span class="pill">Dayton, OH</span>
-      <span class="pill">Student-Run</span>
-      <span class="pill">New Customer Lawn Offer</span>
-      <span class="pill">Fair Pricing</span>
-      <span class="pill">ACTDayton.com</span>
+    <div class="hero-pills" aria-label="Service details">
+      <span class="pill">Dayton, Ohio</span>
+      <span class="pill">Residential properties</span>
+      <span class="pill">Clear estimates</span>
     </div>
   </div>
+  <aside class="hero-feature" aria-label="Leaf cleanup details">
+    <div class="feature-topline"><span class="feature-mark" aria-hidden="true">🍂</span><span>SEASONAL SERVICE</span></div>
+    <p class="feature-kicker">LEAF CLEANUP</p>
+    <h2>Leaves handled.<br>Disposal made clear.</h2>
+    <p class="feature-copy">We gather and bag leaves, then stage them where you specify. The customer is responsible for debris disposal.</p>
+    <div class="feature-rule"><span>01</span><span>Tell us about the yard</span></div>
+    <div class="feature-rule"><span>02</span><span>Get a scope-based estimate</span></div>
+    <a href="#estimate-box" class="feature-link">Ask about leaf cleanup <span aria-hidden="true">↗</span></a>
+  </aside>
 </section>
 
-<div class="trial-banner" id="trial">
-  <div>
-    <h2>New Customer Offer<br>One Lawn Service, Labor-Free</h2>
-    <p>New customers may qualify for one eligible standard lawn service with labor provided at no charge. Service scope, service-area eligibility, and availability must be confirmed by A.C.T. before scheduling. Any agreed materials or other costs will be discussed in advance.</p>
-  </div>
-  <div class="trial-rules">
-    <div class="trial-rule">One eligible standard service</div>
-    <div class="trial-rule">New customers</div>
-    <div class="trial-rule">Scope confirmed first</div>
-    <div class="trial-rule">Service area confirmed</div>
-    <div class="trial-rule">Subject to availability</div>
-  </div>
+<div class="quick-points" aria-label="A.C.T. service information">
+  <span><strong>01</strong> Residential lawn care</span>
+  <span><strong>02</strong> Seasonal leaf cleanup</span>
+  <span><strong>03</strong> Dayton, Ohio</span>
 </div>
 
 <section id="services">
   <div class="section">
     <p class="section-label">What We Do Best</p>
     <h2 class="section-title">Residential Lawn &amp; Grounds Services</h2>
-    <p style="color:var(--gray-dark);max-width:600px;margin:0 auto 40px;text-align:center;font-size:16px;line-height:1.6;">
-      We focus on residential lawn and grounds care in Dayton, with each request reviewed to confirm the service scope, location, and schedule.
-    </p>
-    <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+    <p class="section-intro">Practical care for residential properties, with the work and estimate tailored to the yard.</p>
+    <div class="services-grid">
       
       <div class="service-card">
-        <span class="service-icon" aria-hidden="true">🌱</span>
+        <span class="service-icon" aria-hidden="true">✳</span>
         <h3>Mowing &amp; Trimming</h3>
         <p>Residential lawn mowing with grass trimming around lawn edges and obstacles. Service details are confirmed for each property before scheduling.</p>
       </div>
 
       <div class="service-card">
-        <span class="service-icon" aria-hidden="true">🍂</span>
+        <span class="service-icon" aria-hidden="true">↻</span>
         <h3>Recurring Lawn Maintenance</h3>
         <p>Arrange a recurring schedule for routine mowing and trimming. Visit frequency and availability are confirmed based on your property and service area.</p>
       </div>
 
       <div class="service-card">
-        <span class="service-icon" aria-hidden="true">🧹</span>
-        <h3>Basic Yard &amp; Seasonal Cleanup</h3>
-        <p>Basic leaf, light debris, and seasonal yard cleanup. Cleanup pricing is quoted after reviewing the property and work scope.</p>
+        <span class="service-icon" aria-hidden="true">⌁</span>
+        <h3>Seasonal Leaf Cleanup</h3>
+        <p>We gather and bag leaves, then stage them at an agreed spot. Cleanup is quoted by scope; the customer handles debris disposal.</p>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- INSTAGRAM FEED FOR HIGH-IMPACT SOCIAL PROOF -->
+<section class="process-section" id="how-it-works">
+  <div class="section">
+    <p class="section-label">A straightforward start</p>
+    <h2 class="section-title">From request to ready</h2>
+    <div class="process-grid">
+      <article class="process-card"><span>01</span><h3>Tell us what you need</h3><p>Choose a service and share a few details about your yard and timing.</p></article>
+      <article class="process-card"><span>02</span><h3>Review the estimate</h3><p>We confirm the service area, work scope, price, and any cleanup details with you.</p></article>
+      <article class="process-card"><span>03</span><h3>Confirm the visit</h3><p>If the plan works for you, we will coordinate a schedule based on availability.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM FEED -->
 <section id="instagram" class="instagram-section">
   <div class="instagram-inner">
-    <p class="section-label">Visual Proof &amp; Past Jobs</p>
-    <h2 class="section-title">See The Crew In Action</h2>
-    <p style="color:var(--gray-dark);margin-bottom:8px;font-size:15px;max-width:560px;">Don't just take our word for it. Explore our latest jobs, before-and-afters, and project progress around Dayton on Instagram.</p>
+    <p class="section-label">Follow A.C.T.</p>
+    <h2 class="section-title">Work from the field</h2>
+    <p class="gallery-intro">See updates and recent activity from A.C.T. on Instagram.</p>
     <script src="https://elfsightcdn.com/platform.js" async></script>
     <div class="elfsight-app-22084712-123d-44ed-b7f1-79f92373e0f0" data-elfsight-app-lazy></div>
     <a href="https://www.instagram.com/actdayton" target="_blank" rel="noopener" class="instagram-follow">Follow @actdayton →</a>
@@ -330,13 +471,14 @@
         </div>
       </div>
       <div class="pricing-category">
-        <div class="pricing-cat-header"><h3>Basic Yard &amp; Seasonal Cleanup</h3></div>
+        <div class="pricing-cat-header"><h3>Leaf Cleanup &amp; Debris Disposal</h3></div>
         <div class="pricing-rows open">
-          <div class="pricing-row"><span class="name">Cleanup work</span><span class="price">Quoted by scope</span></div>
+          <div class="pricing-row"><span class="name">Leaf cleanup</span><span class="price">Quoted by scope</span></div>
+          <div class="pricing-row"><span class="name">Debris disposal</span><span class="price">Customer responsibility</span></div>
         </div>
       </div>
     </div>
-    <p class="note">Per-visit prices are starting guidelines for standard service. Final scope and price are confirmed before work begins. New customer offer eligibility is confirmed separately.</p>
+    <p class="note">Lawn prices are starting guidelines for standard visits. Cleanup is quoted by scope. Final work and price are confirmed before scheduling; the customer is responsible for debris disposal.</p>
   </div>
 </section>
 
@@ -360,18 +502,16 @@
     <h2 class="section-title">About A.C.T.</h2>
     <div class="about-wrap">
       <div class="about-text">
-        <p>Allied Construction Team (A.C.T.) is focused on <strong>residential lawn and grounds care</strong> in Dayton, Ohio. We provide mowing, trimming, recurring lawn maintenance, and basic seasonal cleanup with clear expectations and careful work.</p>
-        <p>Our long-term company focus is to build a dependable lawn and grounds service for local homeowners. We keep our work centered on outdoor property care and grow through consistent service, practical skills, and trust in the community.</p>
-        <p>We are building A.C.T. around a clear lawn and grounds specialty and a long-term commitment to serving Dayton neighborhoods.</p>
+        <p>Allied Construction Team (A.C.T.) is a <strong>residential Lawn &amp; Grounds company</strong> serving Dayton, Ohio. Our services include mowing, trimming, recurring lawn maintenance, and seasonal leaf cleanup, with clear expectations before work begins.</p>
+        <p>A.C.T. began as a student-led effort to learn, build practical skills, and serve the community. That origin remains part of our story as we grow into a long-term company focused on dependable outdoor property care for local homeowners.</p>
+        <p>We are building for the long term through careful work, straightforward communication, and services shaped around each property.</p>
         <p style="margin-top:24px;font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1px;color:var(--red);">Learn. Build. Lead.</p>
       </div>
       <div class="about-right">
         <img src="act.lego12.png" alt="A.C.T. Allied Construction Team Logo">
         <div class="about-stats">
-          <div class="stat-item"><div class="stat-num">15–18</div><div class="stat-label">Age of our team</div></div>
           <div class="stat-item"><div class="stat-num">Dayton</div><div class="stat-label">Our home</div></div>
-          <div class="stat-item"><div class="stat-num">Free</div><div class="stat-label">New customer offer</div></div>
-          <div class="stat-item"><div class="stat-num">Real</div><div class="stat-label">Work. Skills. Growth.</div></div>
+          <div class="stat-item"><div class="stat-num">Long-term</div><div class="stat-label">Built to grow</div></div>
         </div>
       </div>
     </div>
@@ -394,7 +534,7 @@
           <div class="contact-item"><div class="contact-icon" aria-hidden="true">📸</div><div><div class="contact-label">Instagram</div><div class="contact-value"><a href="https://www.instagram.com/actdayton" target="_blank" rel="noopener">@actdayton ↗</a></div></div></div>
         </div>
       </div>
-      
+
       <!-- CLEAN INLINE FORM (NO JOTFORM LINKS) -->
       <div class="estimate-wrap" id="estimate-box">
         <div style="background: #111; padding: 32px; border-radius: 8px; border: 1px solid #222; width: 100%;">
@@ -402,11 +542,11 @@
           <p style="color: #aaa; font-size: 14px; margin-bottom: 24px;">Share a few details about your property and requested lawn or grounds service. We will confirm scope, service-area eligibility, pricing, and availability.</p>
 
           <form action="https://formsubmit.co/actdayton.quotes@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="🚨 NEW A.C.T. ESTIMATE REQUEST!">
+            <input type="hidden" name="_subject" value="New A.C.T. Estimate Request">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://www.actdayton.com">
-            
+
             <div>
               <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">YOUR NAME *</label>
               <input type="text" name="Name" required placeholder="Enter your full name" style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; box-sizing: border-box;">
@@ -419,7 +559,7 @@
               </div>
               <div style="flex: 1; min-width: 140px;">
                 <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">DAYTON NEIGHBORHOOD *</label>
-                <input type="text" name="Neighborhood" required placeholder="e.g. Belmont or street name" style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; box-sizing: border-box;">
+                <input type="text" name="Neighborhood" required placeholder="e.g. Belmont" style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; box-sizing: border-box;">
               </div>
             </div>
 
@@ -429,18 +569,19 @@
                 <option value="" disabled selected>Select a service...</option>
                 <option value="Mowing and trimming">Mowing / trimming</option>
                 <option value="Recurring lawn maintenance">Recurring lawn maintenance</option>
-                <option value="Basic yard and seasonal cleanup">Basic yard / seasonal cleanup</option>
+                <option value="Leaf cleanup">Leaf cleanup</option>
+                <option value="Basic yard and seasonal cleanup">Other basic yard / seasonal cleanup</option>
                 <option value="Other lawn and grounds service">Other lawn &amp; grounds service</option>
               </select>
             </div>
 
             <div>
               <label style="display: block; color: #fff; font-size: 13px; font-weight: bold; margin-bottom: 6px;">JOB DETAILS &amp; TIMELINE</label>
-              <textarea name="Details" rows="3" placeholder="Tell us about yard size, grass height, cleanup needs, and preferred timing..." style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; font-family: inherit; resize: vertical; box-sizing: border-box;"></textarea>
+              <textarea name="Details" rows="3" placeholder="Tell us about yard size, leaf volume, access, preferred timing, and where bagged debris will be left..." style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 14px; font-family: inherit; resize: vertical; box-sizing: border-box;"></textarea>
             </div>
 
             <button type="submit" style="background: #e62429; color: #fff; border: none; padding: 14px 24px; font-size: 16px; font-weight: bold; border-radius: 4px; cursor: pointer; margin-top: 8px; transition: background 0.2s; text-transform: uppercase;">
-              Send Estimate Request 🚀
+              Request My Estimate
             </button>
           </form>
         </div>
@@ -449,6 +590,7 @@
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <p>&copy; 2026 <strong>Allied Construction Team (A.C.T.)</strong> · Dayton, Ohio</p>
@@ -458,8 +600,24 @@
 <script>
   function toggleMenu() {
     const menu = document.getElementById('mobileMenu');
-    menu.classList.toggle('open');
+    const button = document.querySelector('.hamburger');
+    const isOpen = menu.classList.toggle('open');
+    button.setAttribute('aria-expanded', String(isOpen));
+    button.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
   }
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      const menu = document.getElementById('mobileMenu');
+      const button = document.querySelector('.hamburger');
+      if (menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        button.setAttribute('aria-expanded', 'false');
+        button.setAttribute('aria-label', 'Open menu');
+        button.focus();
+      }
+    }
+  });
 
   function togglePricing(btn) {
     const rows = btn.nextElementSibling;
